@@ -1,112 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- nombre de la pestaña del navegador -->
-    <title>Cumbias locotas</title>
-    <!-- conexion con css -->
-    <!-- rel- para la relación. href-para donde esta el archivo  -->
-    <link rel="stylesheet" href="/style.css">
-
-</head>
-
-<body>
-
-    <main>
-        <h1>Esta pagina es para cumbias bien locotas</h1>
-        <img class="imagen1" src="/Imagenes/Foto1.jpeg" alt="">
-
-
-        <!--ul(unorder list) para listas-->
-        <!-- Para los elementos se pone li, para cada lista -->
-        <!-- h3 para header 3. Un tamaño mas pequeño -->
-        <h3>Tipos de cumbias </h3>
-        <ul>
-            <li>Cumbias sonideras </li>
-            <li>Electrocumbias </li>
-            <li>Cumbias rebajadas </li>
-        </ul>
-
-        <!-- OL(order list) -->
-        <h3>Miscelaneos</h3>
-        <ol>
-            <li>Historia </li>
-            <li>Escuchar </li>
-        </ol>
-
-
-        <!-- Menu de navegacion de la pagina web -->
-        <div>
-            <a href="#Seccion1">Cumbias sonideras</a>
-            <a href="#Seccion2">Electrocumbias</a>
-            <a href="#Seccion3">Cumbias rebajadas</a>
-            <a href="#Seccion4">Historia</a>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Zarate Menes Quetzalli">
+    <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Zarate Menes Quetzalli | Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
 
-        <!-- Secciones de texto -->
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="https://i.redd.it/p1buplzbuck31.jpg" alt="Foto de Jane Doe">
+        <h1>Hola, soy Zarate Menes Quetzalli</h1>
+        <!--<h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>-->
 
-        <!-- lorem*1  (Para poner texto aleatorio) -->
-        <h3>Cumbias sonideras</h3>
-        <img class="Img-sonideras" src="/Imagenes/Imagen3.jpg" alt="">
-        <p id="Seccion1">Los sonideros son una expresión cultural propia de los barrios marginados de la Ciudad de México. Durante seis décadas de existencia han amenizado bailes callejeros, eventos en salones, festejos privados y fiestas patronales a través de cumbias, salsas, bachatas y un sin fin de ritmos tropicales, mismos que han hecho bailar a colonias enteras. Los bailes sonideros surgieron en las calles de Tepito, Iztapalapa y Peñón de los Baños como una de las pocas alternativas baratas o gratuitas de recreación para sus habitantes. Su éxito propició que dichos bailes se extendieran por toda la República Mexicana y algunos lugares de Estados Unidos.</p>
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="https://th.bing.com/th/id/OIP.FSFrVKuRM3x6P5nbOD5e_QHaE8?pid=ImgDet&rs=1" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
 
-        <h3 id="Seccion2">Electrocumbias</h3>
-        <img class="Img-sonideras" src="/Imagenes/Imagen2.jpg" alt="">
-        <p>La electrocumbia es un género musical que fusiona la cumbia con sonidos electrónicos. Se originó en 1996, cuando la agrupación Sidestepper encontró la fórmula para mezclar el folclor colombiano con la música electrónica. Desde entonces, han surgido varios exponentes de este género, como Bomba Estéreo, Onda Tropica, Sistema Solar, entre otros. Uno de los artistas más reconocidos de la electrocumbia es Raymix, un ex ingeniero aeroespacial que se declaró homosexual en 2020</p>
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Bolillo.exe</h2>
+        <p class="seccion-texto">Bolillo.exe es una iniciativa para programar páginas web, creada y dirigida por y para estudiantes.</p>
+      </div>
+    </section>
 
-        <h3 id="Seccion3">Cumbia rebajada</h3>
-        <img class="Img-sonideras" src="/Imagenes/Imagen4.png" alt="">
-        <p>La cumbia rebajada es un subgénero musical derivado de la cumbia colombiana y la cumbia mexicana surgido en la ciudad de Monterrey, en el norte de México . Este género se caracteriza por tener un tempo más lento que la cumbia original, aproximadamente a 76 pulsaciones por minuto. La cumbia rebajada emula la rítmica y dotación instrumental clásica de la cumbia colombiana (percusiones, bajo y trompetas) y el vallenato (caja, guacharaca y acordeón) . Este género musical se popularizó en México gracias a la influencia de los sonideros de Monterrey, quienes comenzaron a tocar cumbia rebajada en sus fiestas. </p>
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <img class="bi-bi-laptop" src="https://th.bing.com/th/id/OIP.2T99801KtADI3hHRcoCDkwHaG5?pid=ImgDet&rs=1"></img>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Mi acercamiento al desarrollo web nace del gusto por el diseño y la necesidad de entender la funcionalidad de las paginas para poder aplicarlo a la explotación web. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">Python</span>
+            </div>
+          </div>
 
-        <h3 id="Seccion4">Historia</h3>
-        <img class="Img-sonideras" src="/Imagenes/Imagen4.jpg" alt="">
-        <p>La cumbia es un género musical y baile originario de Colombia. Se cree que la cumbia se originó en la región de la costa Caribe colombiana durante la época de la colonización española. La cumbia es una mezcla de ritmos africanos, indígenas y europeos. El género se popularizó en Colombia durante la década de 1940 y desde entonces ha evolucionado y se ha expandido a otros países de América Latina. La cumbia es conocida por su ritmo alegre y pegajoso, que se toca con instrumentos como la guacharaca, el tambor alegre, la caja vallenata, el acordeón y la guitarra.</p>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <img class="s4vitar" src="https://th.bing.com/th/id/OIP.Q6GrrubXAlvWqtKN2KQ0XQHaFj?pid=ImgDet&rs=1"></img>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Soy estudiante de ingeniería en computación, enfocada a la ciberseguridad. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">PHCT</span>
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+              <span class="badge text-bg-primary">Programación</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis únicos tres proyectos(humildemente)</h2>
+      <h3 class="seccion-descripcion">Estos son los únicos tres proyectos que hice...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://i.ytimg.com/vi/HF1RtfkIWp0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgTChCMA8=&rs=AOn4CLCr3F-jDdUK7O9s402_IcFllNB5AA" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Zarate-Menes/Pagina-cumbias.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://th.bing.com/th/id/R.50939d072a4092f329562721ecccda84?rik=C8JefV13fQwPFA&pid=ImgRaw&r=0" alt="Proyecto 2">
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Zarate-Menes/Google_clon_TCP" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://glooglee.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <!-- ANCLA QUE NOS LLEVA A OTRO SITIO WEB -->
-        <!-- href, referecia a donde queramos que nos lleve -->
-        <p>Haz click en la imagen para escuchar cumbias </p>
-        <a href="https://www.youtube.com/watch?v=21UNN0BPJtY&ab_channel=PAYINKOLOMBIAS">
-            <img class="refereciaImagen" src="/Imagenes/Imagen6.jpg" alt="">
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="https://i.ytimg.com/vi/zsH1OMIu4AA/maxresdefault.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto actual</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/Zarate-Menes/PortafolioTCP" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://fastidious-belekoy-6d7b79.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/Zarate-Menes" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="https://64.media.tumblr.com/e3ecb17f8d1cac3b5090b782d698857d/a7bad540e8bf9fa7-7f/s1280x1920/cd9b37dcd7e0d13c47c95c6b761744fca5c46713.jpg" alt="Foto de Gino">
+              <p class="testimonio-texto">Bolillo.exe me cambió la vida, dejé de vivir en el techo de mi vecino..</p>
+              <div class="testimonio-info">
+                <p class="cliente">Negro</p>
+                <p class="cargo">Michi del metro</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="https://th.bing.com/th/id/OIP.Y2TDzywVqAdH20Sv3hE0eQHaHa?pid=ImgDet&rs=1" alt="Foto de Nora">
+              <p class="testimonio-texto">Entrar a Bolillo.exe fue lo mejor que me pudo pasar en la vida, conseguí mi primera chamba, aún recuerdo el día que de la chamba yo me enamoré. Todo gracias a Bolillo.exe, sin duda una gran asociación sin fines de lucro. Este programa es público, ajeno a cualquier partido político. Queda prohibido el uso para fines distintos a los establecidos en el programa</p>
+              <div class="testimonio-info">
+                <p class="cliente">Whiskas</p>
+                <p class="cargo">Michi del techo de tu vecina</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="https://1.bp.blogspot.com/-o-jKSOjL-Uo/XW2IJrqW-9I/AAAAAAAARRc/wI2NJ33bMjkCmCMkPDwg0Zns0nh2i2KkQCLcBGAs/s1600/Gatitos%2Belegantes%2Bcon%2Bcorbata%2B17.jpg" alt="Foto de Leonardo">
+              <p class="testimonio-texto">Gracias a Bolillo.exe, pude despegar en mi carrera y ahora soy director ejecutivo de google.com.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Corbato</p>
+                <p class="cargo">Director ejecutivo de Google</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para aventarle huevos al vecino que te caiga mal.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:zaratmenes@proton.me">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://github.com/Zarate-Menes" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
         </a>
+        <a href="mailto:zaratmenes@proton.me" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+          <a href="https://www.linkedin.com/in/zarate-menes-quetzalli-45910629a/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Bolillo.exe (2023) &#169;</div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-        <!-- FORMULARIOS -->
-        <form>
-            <p> ¿Cual es tu cumbia preferida? </p>
-            <label for="Respuesta">
-                <input type="text">
-                <button>Enviar</button>
-            </label>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
 
-            <!-- FORMULARIO INPUNT RADIO -->
-            <!-- name para que las respuestas se asocien a un formulario -->
-            <!-- for se asocia a cada respuesta individualmente -->
-            <p>¿Te gustan las cumbias?</p>
-            <label for="respuesta1">
-                <input type="radio" name="pregunta1">si
-            </label>
-            <label for="respuesta2">
-                <input type="radio" name="pregunta1">no
-            </label>
-
-            <!-- Para el tipo de casilla, cambiamos radio a checkbox -->
-            <!-- Debemos poner el identificador en name a pregunta2, para que se asocien las respuestas -->
-            <p>¿Tu familia escucha cumbias?</p>
-            <label for="respuesta1">
-                <input type="checkbox" name="pregunta2">si
-            </label>
-            <label for="respuesta2">
-                <input type="checkbox" name="pregunta2">no
-            </label>
-
-        </form>
-
-
-
-    </main>
-</body>
-
+  </body>
 </html>
